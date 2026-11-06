@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% block title %}Sign Up | CampusConnect{% endblock %}
 {% block content %}
-<h2>Create Your account</h2>
-<form method="post">
+<h1 class="h3 mb-3">Create your account</h1>
+<form method="post" class="col-md-7 col-lg-6">
     {% csrf_token %}
     {{form.as_p}}
-    <button type="submit">Sign Up</button>
+    <button class="btn btn-primary" type="submit">Sign Up</button>
 </form>
 {% endblock %}
